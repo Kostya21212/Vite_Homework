@@ -2,41 +2,40 @@
 export const numbers = function (){
     let string = ''
     for(let i = 20; i <= 30;  i += 0.5){
-        string += i + ' '
+        string += i + ', '
     }
-    return console.log(`Завдання №1 : ${string}`)
+    console.log(`Завдання №1 : ${string}`)
 }
 numbers()
 // Один долар коштує 27 гривень. Вивести дані з розрахунком вартості 10, 20, 30... 100 доларів.
 export const numbers2 = function(num){
     let result = ''
     for(let i = 10; i <= 100; i +=10){
-         result += i * num + ' '
-         
+         result += i * num + ', '
     }
-    return console.log(`Завдання №2 : ${result}`)
+    console.log(`Завдання №1 : ${result}`)
 }
 numbers2(27)
 // Дане ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N.
-export const numbers3 = function (N){
-    let res = ''
-    for(let i = 1; i <=100; i++){
-        if( i < N){
-         res += i * 2 + ' '
-        }
-        
-    }return console.log(`Завдання №3 : ${res}`)
+export const numbers3 = function(N) {
+    let res = [];
+    for (let i = 1; i * i <= N; i++) {
+        res.push(i);
+    }
+    console.log(JSON.stringify(res));
 }
-numbers3 (200)
+
+numbers3(200);
+
 // Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
 export const numbers4 = function(Num){
     let resNum4 = ''
     for(let i = 1; i <= Num;i++){
         if(Num % i === 0){
-            resNum4 += i + ' ' 
+            resNum4 += i + ', ' 
         }
     }
-    return  console.log(`Завдання №4 : ${resNum4}`)
+      console.log(`Завдання №4 : ${resNum4}`)
 }
 numbers4(20)
 // Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
