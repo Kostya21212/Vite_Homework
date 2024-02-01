@@ -13,7 +13,7 @@ export const numbers2 = function(num){
     for(let i = 10; i <= 100; i +=10){
          result += i * num + ', '
     }
-    console.log(`Завдання №1 : ${result}`)
+    console.log(`Завдання №2 : ${result}`)
 }
 numbers2(27)
 // Дане ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N.
