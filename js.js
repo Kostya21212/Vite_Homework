@@ -1,5 +1,5 @@
 function array(arr){
-  arr.sort((a,b) => {
+  console.log(arr.sort((a,b) => {
     if( a > b){
         return 1;}
     if( a < b){
@@ -8,8 +8,8 @@ function array(arr){
     else {
         return 0
     }
-    })
-console.log(arr)
+    }))
+
 arr.splice(1,4)
 return arr
 }
