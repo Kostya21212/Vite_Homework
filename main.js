@@ -13,4 +13,4 @@ console.log(arr)
 arr.splice(1,4)
 return arr
 }
-console.log(array([1,2,3,4,9,21,6,55,11]))
+console.log(array([1,2,3,4,9,21,6,55,112]))
